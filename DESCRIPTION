@@ -1,0 +1,15 @@
+Package: bmdModeling
+Maintainer: Machteld Varewyck <machteld.varewyck@openanalytics.eu>
+License: MIT + file LICENSE
+Title: Benchmark dose modeling
+Type: Package
+Author: Machteld Varewyck, Laure Cougnaud
+Description: Benchmark dose modeling according to Proast and summarize results using model-averaging.
+Version: 0.0.50
+Date: 2017-06-16
+Imports: shiny, devtools, testthat, plyr, RColorBrewer, forestplot,
+        grid
+Suggests: shinysky, rmarkdown, png, shinyjs, V8
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-08-18 11:07:07 UTC; mvarewyck

@@ -1,0 +1,88 @@
+0.0.50
+  o show warning on covariates not included only when relevant 
+  o warning on selected models for MA in report adapted
+0.0.49
+  o updated support links in the UI
+0.0.48
+  o include landscape mode in rmd (fixed bug with shiny proxy)
+0.0.47
+  o remove landscape mode in rmd (not working on shiny proxy)
+0.0.46
+  o explicitly copying only needed files for rmd report in shiny server
+0.0.45
+  o fix bug pandoc args filter: remove .hs extension
+0.0.44
+  o report includes pages in landscape mode for wide tables 
+0.0.43
+  o fix issue with names of bmdData for forestplot()
+  o remove column "Included covariate(s)" if empty  
+0.0.42
+  o faster version of plotAverageModel()
+  o implement option to include interaction of covariates as factor
+  o alert in flowchart no longer stops the analysis     
+0.0.41
+  o fix typo showProgress for naive model-averaging
+0.0.40
+  o fix issue forestplot if none accepted models
+0.0.39
+  o include forestplot for bmd, bmdl and bmdu
+  o show progress in UI for bootstrap ma-bmdl and ma-bmdu
+  o automatically scroll to results section in UI
+0.0.38
+  o update f.lik.cat() suggested by Wout to obtain same results as with bmds
+0.0.37
+  o update code for probit model according to proast62.10
+  o adapt results in test files, mostly estimated CI due to new f.profile.all()
+0.0.36
+  o temporary adapt f.uniroot.probit(); invalidates tests
+0.0.35
+  o fix bug column names of weight table in UI when some fitted models have error
+0.0.34
+  o Don't round lowest BMDL and highest BMDU in report
+0.0.33
+  o Don't round lowest BMDL and highest BMDU in UI
+0.0.32
+  o Exclude option of MA for clustered quantal data (under construction)
+0.0.31
+  o Fix error that input$isLitter for categorical is overwritten by one for continuous
+0.0.30
+  o Fix error missing legend names for plotAverageModel() in UI
+0.0.29
+  o Fix error null in if(input$performMA) for downloading report
+0.0.28
+  o Fix error for condition if(input$performMA) when this input is null
+0.0.27
+  o Remove text best model "with covariate for" if no covariates
+0.0.26
+  o show results for all covariate combinations option in UI
+0.0.25
+  o reportBmd: exclude sf.x and show maBmdPlot from temporary folder
+0.0.24
+  o renderTable option rownames = TRUE when necessary
+  o sink console output in log file to download in UI (button not shown)
+  o warning when decreasing values for quantal response
+0.0.23
+  o naive approach for MA as option in UI
+  o retain bootstrap data if best models aic better than null  
+0.0.22
+  o model averaging as option in UI
+0.0.21
+  o critical value AIC - 2 for null model, AIC + 2 for full model
+0.0.20
+  o fix bug default CES in optimizeBmd() 
+0.0.19
+  o model-averaged BMD for quantal models with covariates
+  o exclude bootstrap data with wrong trend  
+  o critical value AIC - 2 instead of AIC + 2 for null and full model   
+0.0.18
+  o include CI for model-averaged BMD plot
+0.0.17
+  o fix bugs when model-averaged BMD could not be calculated
+0.0.16
+  o report to download is updated
+0.0.15
+  o fix issue no output in UI for model averaging without covariates
+0.0.14
+  o report results for all covariate combinations
+0.0.13
+  o simplify UI based on comments proast team 
